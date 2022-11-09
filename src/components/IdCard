@@ -1,0 +1,18 @@
+function IdCard(props){
+    return(
+        <div className ="IdCard">
+         <div className="col d-flex">
+          <img className="p-1" src={props.picture} alt="imagem da pessoa"/>
+          <div className="d-flex flex-column text-start">
+          <span className="fw-bold">First name: <span className="fw-normal">{props.firstName}</span></span>
+          <span className="fw-bold">Last name: <span className="fw-normal">{props.lastName}</span></span>
+          <span className="fw-bold">Gender: <span className="fw-normal">{props.gender}</span></span>
+          <span className="fw-bold">Heigth: <span className="fw-normal">{props.height}</span></span>
+          <span className="fw-bold">Birth: <span className="fw-normal">{props.birth}</span></span>
+          </div>
+        </div>       
+        </div>
+    )
+}
+
+export default IdCard
